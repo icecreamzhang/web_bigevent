@@ -67,7 +67,7 @@ $('#form_login').on('submit', function(e){
     // console.log(res.token)
     // 可以将登录产生的token字符串保存到localStorage中
     localStorage.setItem('token', res.token)
-    location.href = 'http://127.0.0.1:8080/index.html'
+    location.href = '/big_event/index.html'
     
   })
 })
