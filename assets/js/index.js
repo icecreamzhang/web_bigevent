@@ -1,5 +1,3 @@
-
-
 $(function(){
   // 调用获取用户的基本信息
   getUserInfo()
@@ -12,17 +10,15 @@ $(function(){
       localStorage.removeItem('token')
       // 跳到登录页面
       location.href = '/big_event/login.html'
-
-      
       layer.close(index);
     })
   })
-})
+}) 
 
 // 获取元素的基本信息
 function getUserInfo() {
   $.ajax({
-    method: 'GET',
+    method: 'GET',   
     url: '/my/userinfo',
     // headers就是请求头
     // headers: {
